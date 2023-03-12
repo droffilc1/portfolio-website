@@ -40,6 +40,7 @@ export const LinkItem = styled.a`
 		margin-bottom: 8px;
 		display: flex;
 		align-items: center;
+		margin-left: 100px;
 	}
 `
 
@@ -138,9 +139,10 @@ export const LinkList = styled.ul`
 
 export const LinkColumn = styled.div`
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
 	max-width: 220px;
 	width: 100%;
+	
 `
 export const LinkTitle = styled.h4`
 	font-style: normal;
@@ -155,5 +157,6 @@ export const LinkTitle = styled.h4`
 		font-size: 10px;
 		line-height: 12px;
 		margin-bottom: 8px;
+		margin-left: 140px;
 	}
 `
