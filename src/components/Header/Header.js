@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
@@ -16,9 +16,9 @@ const Header = () => (
     </Div1>
     <Div2>
       <li>
-        <Link href='#projects'>
-          <NavLink>Projects</NavLink>
-        </Link>
+        <Link href='#about'>
+          <NavLink>About</NavLink>
+        </Link>        
       </li>
       <li>
         <Link href='#tech'>
@@ -26,21 +26,18 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href='#about'>
-          <NavLink>About</NavLink>
+        <Link href='#projects'>
+          <NavLink>Projects</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href='https://github.com'>
+      <SocialIcons href='https://github.com/droffilc1' target='_blank'>
         <AiFillGithub size='3rem' />
       </SocialIcons>
-      <SocialIcons href='https://linkedin.com'>
+      <SocialIcons href='https://www.linkedin.com/in/clifford-mapesa-a98601216/' target='_blank'>
         <AiFillLinkedin size='3rem' />
-      </SocialIcons>
-      <SocialIcons href='https://twitter.com'>
-        <AiFillTwitterCircle size='3rem' />
-      </SocialIcons>
+      </SocialIcons>      
     </Div3>
   </Container>
 );

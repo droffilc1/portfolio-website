@@ -1,7 +1,9 @@
 import React from "react";
+import Link from 'next/link';
+import { NavLink } from '../Header/HeaderStyles'
 
 import {
-  Section,
+  Section,  
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
@@ -13,15 +15,19 @@ const Hero = () => (
     <LeftSection>
       <SectionTitle main center>
         Welcome To <br />
-        My Personal Portfolio
+        My Personal Portfolio     
       </SectionTitle>
       <SectionText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Hi there, I'm Clifford Mapesa, a full-stack software engineer. I'm passionate about building great experiences using software.
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>Learn More</Button>
-    </LeftSection>
+      <Button>
+        <Link href='#about'>
+          <NavLink>Learn More</NavLink>
+        </Link>
+      </Button>      
+    </LeftSection>    
   </Section>
+  
 );
 
 export default Hero;
