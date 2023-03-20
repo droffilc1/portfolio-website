@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { NavLink } from '../Header/HeaderStyles'
 
 import {
-  Section,  
+  Section, 
+  SectionDivider, 
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
@@ -24,7 +25,8 @@ const Hero = () => (
         <Link href='#about'>
           <NavLink>Learn More</NavLink>
         </Link>
-      </Button>      
+      </Button>
+      <SectionDivider />      
     </LeftSection>    
   </Section>
   

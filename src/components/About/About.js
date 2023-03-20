@@ -8,7 +8,7 @@ import {
 const About = () => {
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle main>About Me</SectionTitle>
       <SectionText>
         I am a creative, detail-oriented software engineer with a deep interest
         in emerging technologies with a proven track record of creating and

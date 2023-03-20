@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-
+import { SiHashnode} from 'react-icons/si'
 import { SocialIcons } from '../Header/HeaderStyles';
 import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, SocialContainer, SocialIconsContainer, CompanyContainer, Slogan } from './FooterStyles';
 
@@ -25,6 +25,9 @@ const Footer = () => {
           </SocialIcons>
           <SocialIcons href="https://www.linkedin.com/in/clifford-mapesa-a98601216/" target="_blank">
             <AiFillLinkedin size="3rem" />
+          </SocialIcons>
+          <SocialIcons href='https://cliffordmapesa.hashnode.dev/' target='_blank'>
+            <SiHashnode size='3rem' />
           </SocialIcons>          
         </SocialContainer>
       </SocialIconsContainer>
