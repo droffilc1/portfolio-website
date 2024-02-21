@@ -5,7 +5,7 @@ import {
   ExternalLinks,
   GridContainer,
   HeaderThree,
-  Hr,  
+  Hr,
   TitleContent,
   UtilityList,
   Img,
@@ -20,36 +20,43 @@ const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   const query = `
-        query {
-            user(username: "cliff984") {
-            publication {
-                posts(page:0){
-                slug
-                title
-                brief
-                coverImage
-                cuid
-                _id
+        query Publication {
+          publication(host: "cliffordmapesa.hashnode.dev") {
+            isTeam
+            title
+            posts(first: 6) {
+              edges {
+                node {
+                  title
+                  brief
+                  coverImage {
+                    attribution
+                    photographer
+                    url
+                  }
+                  url
                 }
+              }
             }
-            }
+          }
         }
-        `; 
+        `;
   useEffect(() => {
     fetchPosts();
-  }, []); 
+  }, []);
 
   const fetchPosts = async () => {
-    const response = await fetch("https://api.hashnode.com", {
+    const response = await fetch("https://gql.hashnode.com/", {
       method: "POST",
       headers: {
-        "Content-type": "application/json",        
+        "Content-type": "application/json",
       },
       body: JSON.stringify({ query }),
     });
 
-    const data = await response.json();   
-    setPosts(data.data.user.publication.posts);    
+    const data = await response.json();
+    console.log(data);
+    setPosts(data.data.publication.posts.edges.map((edge => edge.node)));
   };
 
   return (
@@ -58,8 +65,8 @@ const Blog = () => {
       <SectionTitle main>Blog</SectionTitle>
       <GridContainer>
         {posts.map((post) => (
-          <BlogCard>
-            <Img src={post.coverImage} alt={post.title} />
+          <BlogCard key={post.url}>
+            <Img src={post.coverImage.url} alt={post.title} />
             <TitleContent>
               <HeaderThree title>{post.title}</HeaderThree>
               <Hr />
