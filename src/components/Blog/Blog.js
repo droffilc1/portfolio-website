@@ -74,7 +74,7 @@ const Blog = () => {
             <CardInfo className="card-info">{post.brief}</CardInfo>
             <UtilityList>
               <ExternalLinks
-                href={`https://cliffordmapesa.hashnode.dev///${post.slug}`}
+                href={post.url}
                 target="_blank"
                 rel="noreferrer"
               >
