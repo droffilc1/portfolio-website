@@ -55,7 +55,6 @@ const Blog = () => {
     });
 
     const data = await response.json();
-    console.log(data);
     setPosts(data.data.publication.posts.edges.map((edge => edge.node)));
   };
 
@@ -77,6 +76,7 @@ const Blog = () => {
                 href={post.url}
                 target="_blank"
                 rel="noreferrer"
+                aria-label={`Read more about ${post.title}`}
               >
                 Read More
               </ExternalLinks>

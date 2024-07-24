@@ -17,23 +17,23 @@ const Header = () => (
     </Div1>
     <Div2>
       <li>
-        <Link href='#about'>
-          <NavLink>About</NavLink>
-        </Link>        
-      </li>
-      <li>
-        <Link href='#projects'>
-          <NavLink>Projects</NavLink>
+        <Link href="#about" passHref>
+          <NavLink><a aria-label="About section">About</a></NavLink>
         </Link>
       </li>
       <li>
-        <Link href='#tech'>
-          <NavLink>Technologies</NavLink>
+        <Link href='#projects' passHref>
+          <NavLink><a aria-label="Project section">Projects</a></NavLink>
         </Link>
-      </li>      
+      </li>
       <li>
-        <Link href='#blog'>
-          <NavLink>Blog</NavLink>
+        <Link href='#tech' passHref>
+          <NavLink><a aria-label="Technologies section">Technologies</a></NavLink>
+        </Link>
+      </li>
+      <li>
+        <Link href='#blog' passHref>
+          <NavLink><a aria-label="Blog section">Blog</a></NavLink>
         </Link>
       </li>
     </Div2>
@@ -43,10 +43,10 @@ const Header = () => (
       </SocialIcons>
       <SocialIcons href='https://www.linkedin.com/in/clifford-mapesa-a98601216/' target='_blank'>
         <AiFillLinkedin size='3rem' />
-      </SocialIcons> 
+      </SocialIcons>
       <SocialIcons href='https://cliffordmapesa.hashnode.dev/' target='_blank'>
         <SiHashnode size='3rem' />
-      </SocialIcons>     
+      </SocialIcons>
     </Div3>
   </Container>
 );

@@ -11,7 +11,7 @@ export const Container = styled.div`
   position: sticky;
   top: 0px;
   z-index: 1;
-  background-color: hsl(232,16.9%,17.5%);
+  background-color: #2D283E;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -115,7 +115,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 `;
 
 
-// Social Icons 
+// Social Icons
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
@@ -126,6 +126,5 @@ border-radius: 50px;
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
-    
   }
 `

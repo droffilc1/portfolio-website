@@ -14,7 +14,7 @@ export const projects = [
     image: '/images/1.png',
     tags: ['Mongo', 'Express', 'Node'],
     source: 'https://github.com/droffilc1/recipe-hub',
-    visit: 'https://brainy-ruby-jellyfish.cyclic.app/',
+    visit: 'https://recipe-hub-pi.vercel.app/',
     id: 0,
   },
   {

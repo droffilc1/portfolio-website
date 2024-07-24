@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { NavLink } from '../Header/HeaderStyles'
 
 import {
-  Section, 
-  SectionDivider, 
+  Section,
+  SectionDivider,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
@@ -16,7 +16,7 @@ const Hero = () => (
     <LeftSection>
       <SectionTitle main center>
         Welcome To <br />
-        My Personal Portfolio     
+        My Personal Portfolio
       </SectionTitle>
       <SectionText>
         Hi there, I'm Clifford Mapesa, a full-stack software engineer. I'm passionate about building great experiences using software.
@@ -26,10 +26,9 @@ const Hero = () => (
           <NavLink>Learn More</NavLink>
         </Link>
       </Button>
-      <SectionDivider />      
-    </LeftSection>    
+      <SectionDivider />
+    </LeftSection>
   </Section>
-  
 );
 
 export default Hero;
