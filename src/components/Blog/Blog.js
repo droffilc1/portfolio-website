@@ -65,7 +65,7 @@ const Blog = () => {
       <GridContainer>
         {posts.map((post) => (
           <BlogCard key={post.url}>
-            <Img src={post.coverImage.url} alt={post.title} />
+            <Img src={post.coverImage?.url} alt={post.title} />
             <TitleContent>
               <HeaderThree title>{post.title}</HeaderThree>
               <Hr />
