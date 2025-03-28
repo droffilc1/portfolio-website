@@ -11,7 +11,7 @@ export const Container = styled.div`
   position: sticky;
   top: 0px;
   z-index: 1;
-  background-color: #2D283E;
+  background-color: #282828;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -56,7 +56,7 @@ export const Div3 = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #ebdbb2;
   transition: 0.4s ease;
   &:hover {
     color: #fff;
@@ -77,7 +77,7 @@ export const ContactDropDown = styled.button`
   font-size: 1.7rem;
 
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #d79921;
   cursor: pointer;
   transition: 0.3s ease;
 
@@ -119,11 +119,11 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
-color: white;
+color: #ebdbb2;
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #212d45;
+    background-color: #282828;
     transform: scale(1.2);
     cursor: pointer;
   }

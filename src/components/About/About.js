@@ -1,6 +1,5 @@
 import {
   Section,
-  SectionDivider,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
@@ -15,7 +14,6 @@ const About = () => {
         implementing successful front and back-end web applications. Looking to
         bring my skills to a tech company with a global reach.
       </SectionText>
-      <SectionDivider />
     </Section>
   );
 };
